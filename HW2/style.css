@@ -30,7 +30,7 @@ header {
 .menu > ul li a:hover {
     color: #000000;
     text-decoration: none;
-    border-bottom: none;
+    border-bottom: 1px solid;
 }
 
 .content {
