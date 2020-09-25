@@ -19,9 +19,7 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="53e653ff-2e7b-4f46-ae48-6e5c15f00cf7" name="Default Changelist" comment="change css">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-    </list>
+    <list default="true" id="53e653ff-2e7b-4f46-ae48-6e5c15f00cf7" name="Default Changelist" comment="change css" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -38,7 +36,7 @@
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../Web Development/Class work" />
     <property name="settings.editor.selected.configurable" value="preferences.lookFeel" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
@@ -53,6 +51,7 @@
       <workItem from="1600977303248" duration="579000" />
       <workItem from="1600978359797" duration="327000" />
       <workItem from="1601016047204" duration="554000" />
+      <workItem from="1601048890860" duration="120000" />
     </task>
     <task id="LOCAL-00001" summary="change css">
       <created>1600978438590</created>
@@ -91,6 +90,10 @@
     <option name="LAST_COMMIT_MESSAGE" value="change css" />
   </component>
   <component name="WindowStateProjectService">
+    <state x="463" y="119" key="FileChooserDialogImpl" timestamp="1601049005519">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="463" y="119" key="FileChooserDialogImpl/0.0.1366.728@0.0.1366.728" timestamp="1601049005519" />
     <state x="275" y="97" key="Vcs.Push.Dialog.v2" timestamp="1600978631691">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
