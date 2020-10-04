@@ -121,7 +121,7 @@ nav {
     padding: 0 10px;
 }
 
-.footer-nav li:hover {
+.footer-nav li a:hover {
    color: #3181A6;
    border-bottom: 1px solid #3181A6;
 }
