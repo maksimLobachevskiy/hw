@@ -47,7 +47,7 @@ nav {
 
 .sidebar {
     border: 1px solid #485863;
-    width: 344px;
+    flex-basis: 344px;
     margin-right: 26px
 }
 
@@ -70,7 +70,7 @@ nav {
 }
 
 .content {
-    width: 885px;
+    flex-basis: 885px;
     margin-left: 26px;
 
 }
@@ -115,6 +115,7 @@ nav {
     height: 69px;
     align-items: center;
     font-size: 28px;
+
 }
 
 .footer-nav li {
