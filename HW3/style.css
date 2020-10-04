@@ -1,0 +1,131 @@
+body {
+    margin: 0 auto;
+    width: 100%;
+    max-width: 1280px;
+    margin-top: 61px;
+    margin-bottom: 30px;
+    font-family: "Roboto";
+    font-weight: 400;
+}
+
+.logo {
+    font-size: 80px;
+    color: #4bcaff;
+    margin-bottom: 38px;
+}
+
+.logo span {
+    color: #000000;
+}
+
+nav {
+    background-color: #35444F;
+}
+
+.nav-menu {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #ffffff;
+}
+
+.nav-menu li {
+    border-left: 1px solid #FFFFFF;
+    padding: 26px 40px 19px 40px;
+    font-size: 24px;
+}
+
+.nav-menu li:hover {
+    background-color: #222F3A;
+}
+
+.main-content {
+    display: flex;
+    align-items: flex-start;
+    margin-top: 50px;
+}
+
+.sidebar {
+    border: 1px solid #485863;
+    width: 344px;
+    margin-right: 26px
+}
+
+.side-menu {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.side-menu li {
+    padding: 27px 0px 27px 42px;
+    color: #485863;
+    font-size: 27px;
+}
+
+.side-menu li:hover {
+    background-color: #DBDBDB;
+    color: #000000;
+    padding-left: 55px;
+}
+
+.content {
+    width: 885px;
+    margin-left: 26px;
+
+}
+
+.content p {
+    font-size: 18px;
+    line-height: 24px;
+    padding-bottom: 34px;
+    color: #2C2C2C;
+}
+
+.main-image {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 529px;
+    border: 1px solid #485863;
+    margin-bottom: 37px;
+}
+
+.topimg {
+    width: 320px;
+    height: auto;
+    transition: transform 2s;
+    transition-timing-function: linear;
+}
+
+.topimg:hover {
+    transform: scale(1.2);
+}
+
+.footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgba(99, 105, 110, 0.48);
+    padding: 0 40px;
+}
+
+.footer-nav {
+    display: flex;
+    height: 69px;
+    align-items: center;
+    font-size: 28px;
+}
+
+.footer-nav li {
+    padding: 0 10px;
+}
+
+.footer-nav li:hover {
+   color: #3181A6;
+   border-bottom: 1px solid #3181A6;
+}
+
+.copyright {
+    font-size: 24px;
+}
