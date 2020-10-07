@@ -94,7 +94,7 @@ nav {
 }
 
 .topimg {
-    width: 320px;
+    max-width: 100%;
     height: auto;
     transition: transform 2s;
     transition-timing-function: linear;
