@@ -42,10 +42,6 @@ body {
     padding: 28px 1rem;
 }
 
-.header__menu-item:last-child {
-    padding-right: 0;
-}
-
 .header__menu-item a:hover, .logo-text a:hover {
     color: #14B9D5;
 }
@@ -77,6 +73,7 @@ body {
     background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url(images/header-bg.jpeg) no-repeat bottom;
     background-size: cover;
     background-attachment: fixed;
+  
 }
 
 .header__bg {
