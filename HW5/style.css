@@ -112,7 +112,6 @@ body {
     visibility: hidden;
     width: 100%;
     box-sizing: border-box;
-    transition: visibility 0s, opacity .6s linear;
 }
 
 .article-link:hover .article-title {
