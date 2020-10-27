@@ -49,6 +49,7 @@ a {
 p {
     line-height: 0;
 }
+
 input {
-    display: block;
+    border: none;
 }
