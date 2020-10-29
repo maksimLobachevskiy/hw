@@ -1,0 +1,35 @@
+body {
+    font-family: "Arial Narrow", sans-serif;
+    background-color: #111110;
+    font-weight: 700;
+    color: #ffcc00;
+
+}
+
+.wrapper {
+    position: absolute;
+    width: 900px;
+    height: 800px;
+    bottom: 0;
+    left: 50%;
+    margin-left: -11em;
+    font-size: 40px;
+    text-align: justify;
+    overflow: hidden;
+    transform-origin: 50% 100%;
+    transform: perspective(300px) rotateX(25deg);
+}
+
+.content {
+    position: absolute;
+    animation: titles 30s infinite;
+    animation-timing-function: linear;
+}
+@keyframes titles {
+    0% { top: 100%; }
+    100% { top: -50%; }
+}
+
+h1, h2 {
+    text-align: center;
+}
