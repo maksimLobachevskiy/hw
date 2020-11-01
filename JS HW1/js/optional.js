@@ -1,6 +1,11 @@
-let age = prompt('How old are you?');
-let name = prompt('What is your name?');
-
+let age;
+let name;
+do {
+    age = parseInt(prompt("How old are you?"));
+} while (age == '' || isNaN(age));
+    do {
+        name = prompt("What is your name?");
+    } while (name == 0);
 if (age >= 18 && age <= 22) {
     let ageConf = confirm("Are you sure you want to continue?");
     if (ageConf) {
