@@ -1,6 +1,5 @@
 let numValue = parseInt(prompt("Введите число"));
 function fib(n) {
-    n = numValue;
     if (n > 0) {
         let F0 = 1;
         let F1 = 1;
