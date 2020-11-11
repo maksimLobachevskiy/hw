@@ -1,7 +1,7 @@
 //Запрашиваем числа и мат. операцию
-numA = parseFloat(prompt("Введите число А"));
-numB = parseFloat(prompt("Введите число B"));
-operValue = prompt("Введите операцию +, -, *, /");
+let numA = parseFloat(prompt("Введите число А"));
+let numB = parseFloat(prompt("Введите число B"));
+let operValue = prompt("Введите операцию +, -, *, /");
 
 //Создаем функцию математических операций
 function calc(firstNumber,operation,secondNumber) {
