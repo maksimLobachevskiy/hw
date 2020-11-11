@@ -5,7 +5,6 @@ let operValue = prompt("Введите операцию +, -, *, /");
 
 //Создаем функцию математических операций
 function calc(firstNumber,operation,secondNumber) {
-    operation = operValue;
     switch (operation) {
        case "+":
            return firstNumber + secondNumber;
