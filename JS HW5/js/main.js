@@ -7,12 +7,10 @@ function createNewUser() {
         return (new Date().getFullYear() - birthYear);
     }
     this.getLogin = function () {
-        let myLogin = this.firstName.charAt(0).toLowerCase()+this.lastName.toLowerCase();
-        return myLogin;
+        return this.firstName.charAt(0).toLowerCase()+this.lastName.toLowerCase();
     }
     this.getPassword = function () {
-        let myPassword = this.firstName.charAt(0).toUpperCase()+this.lastName.toLowerCase()+this.birthday.slice(6);
-        return myPassword;
+        return this.firstName.charAt(0).toUpperCase()+this.lastName.toLowerCase()+this.birthday.slice(6);
     }
 }
 
@@ -30,16 +28,14 @@ function createNewUser() {
         lastName: lName,
         birthday: birth,
         getLogin: function () {
-            let myLogin = this.firstName.charAt(0).toLowerCase()+this.lastName.toLowerCase();
-            return myLogin;
+            return this.firstName.charAt(0).toLowerCase()+this.lastName.toLowerCase();
         },
         getAge: function () {
             let birthYear = this.birthday.slice(6);
             return (new Date().getFullYear() - birthYear);
         },
         getPassword: function () {
-            let myPassword = this.firstName.charAt(0).toUpperCase()+this.lastName.toLowerCase()+this.birthday.slice(6);
-            return myPassword;
+            return this.firstName.charAt(0).toUpperCase()+this.lastName.toLowerCase()+this.birthday.slice(6);
         },
     }
     return newUser;

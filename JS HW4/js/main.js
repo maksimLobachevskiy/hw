@@ -2,8 +2,7 @@ function createNewUser() {
     this.firstName = prompt("Enter your name");
     this.lastName = prompt("Enter your surname");
     this.getLogin = function () {
-        let myLogin = this.firstName.charAt(0).toLowerCase()+this.lastName.toLowerCase();
-        return myLogin;
+        return this.firstName.charAt(0).toLowerCase()+this.lastName.toLowerCase();
     }
 }
 
@@ -20,8 +19,7 @@ function createNewUser() {
         firstName: fName,
         lastName: lName,
         getLogin: function () {
-            let myLogin = this.firstName.charAt(0).toLowerCase()+this.lastName.toLowerCase();
-            return myLogin;
+            return this.firstName.charAt(0).toLowerCase()+this.lastName.toLowerCase();
         }
     }
     return newUser;
