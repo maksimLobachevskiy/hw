@@ -3,8 +3,8 @@ function createNewUser() {
     this.lastName = prompt("Enter your Last Name");
     this.birthday = prompt("Enter your date of birth in form: dd.mm.yyyy", "01.01.2001");
     this.getAge = function () {
-        let birthYear = this.birthday.slice(6);
-        return (new Date().getFullYear() - birthYear);
+        let birthDate = this.birthday.split('.');
+        return ((new Date().getTime() - new Date(`${birthDate[2]}-${birthDate[1]}-${birthDate[0]}`)) / (24 * 3600 * 365.25 * 1000)) | 0;
     }
     this.getLogin = function () {
         return this.firstName.charAt(0).toLowerCase()+this.lastName.toLowerCase();
