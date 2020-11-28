@@ -1,0 +1,19 @@
+header {
+    background-color: #4bcaff;
+    padding: 20px 10px;
+}
+
+footer {
+    background-color: #3CB878;
+    padding: 20px 10px;
+}
+
+main {
+    background-color: azure;
+    padding: 20px 10px;
+}
+
+ul {
+    list-style-type: square;
+    margin-left: 20px;
+}
