@@ -7,8 +7,8 @@ function displayList(array, parentDom) {
             listLi.innerHTML = currentValue;
             list.append(listLi);
         }
-    );
 
+    );
         if (parentDom) {
             parentDom.append(list);
         } else {
