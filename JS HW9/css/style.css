@@ -32,7 +32,7 @@ ul {
     padding: 20px;
 }
 
-.tab {
+.tab-content {
     display: none;
 }
-.content-active {display: block;}
+.tab-content.content-active {display: block;}
