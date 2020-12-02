@@ -1,4 +1,4 @@
-const priceInput = document.querySelector('input[type="number"]');
+const priceInput = document.querySelector('#price');
 const span = document.createElement('span');
 span.classList.add('price-value');
 const errorText = document.createElement('p');
