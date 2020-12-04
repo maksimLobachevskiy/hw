@@ -1,6 +1,5 @@
 const password = document.getElementById('pass');
 const repeatPass = document.getElementById('repeat_pass');
-
 function validatePassword() {
     const icon = document.getElementById('icon1');
     const icon2 = document.getElementById('icon2');
@@ -36,6 +35,8 @@ function validatePassword() {
                 errorText.innerText = 'Нужно ввести одинаковые значения.';
                 errorText.style.color = 'red';
             } else {
+                password.value = "";
+                repeatPass.value = "";
                 alert('You are welcome');
             }
         }
