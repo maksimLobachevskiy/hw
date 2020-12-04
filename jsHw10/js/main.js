@@ -1,7 +1,7 @@
 const icon = document.getElementById('icon1');
 const icon2 = document.getElementById('icon2');
-function showPass(target, icon) { // create a function that accepts arguments
-    const element = document.getElementById(target) // query whatever element you pass to it.
+function showPass(target, icon) {
+    const element = document.getElementById(target)
     if (element.getAttribute('type') === 'password') {
         element.setAttribute('type', 'text');
         icon.classList.add('fa-eye-slash');
@@ -13,7 +13,7 @@ function showPass(target, icon) { // create a function that accepts arguments
     }
 }
 
-icon.addEventListener('click', () => showPass('pass', icon)); // add the event listeners wrapped in anonymous function so it's not called immediately
+icon.addEventListener('click', () => showPass('pass', icon));
 icon2.addEventListener('click', () => showPass('repeat_pass', icon2));
 
 function validatePass() {
