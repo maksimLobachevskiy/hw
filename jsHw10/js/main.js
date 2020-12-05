@@ -22,6 +22,7 @@ function validatePass() {
     const submit = document.querySelector('.password-form')
     const errorText = document.createElement('span');
     submit.addEventListener('submit', () => {
+
             if (password.value !== repeatPass.value) {
                 repeatPass.after(errorText);
                 errorText.innerText = 'Пароли не совпадают.';
@@ -32,6 +33,7 @@ function validatePass() {
                 repeatPass.value = "";
                 alert('You are welcome');
             }
+
         });
 }
 validatePass()
