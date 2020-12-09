@@ -1,61 +1,50 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
+  <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <title>Banners</title>
     <style>
-        .image-to-show {
-            width: 400px;
-            height: 400px;
-        }
+      .image-to-show {
+        width: 400px;
+        height: 400px;
+       
+      }
 
-        .images-wrapper {
-            display: flex;
-            flex-wrap: wrap;
-            justify-content: space-between;
-        }
+      button {
+          margin-right: 20px;
+          border: none;
+          padding: 10px 15px;
+          background-color: crimson;
+          color: #fff;
+          font-weight: 700;
+    
+      }
+
+      .hide {
+          display: none;
+      }
+
+      .show {
+          display: block;
+      }
+
+      .images-wrapper {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        margin-bottom: 20px;
+      }
     </style>
-</head>
-<body>
-<div class="images-wrapper">
-    <img src="img/1.jpg" alt="image of game" class="image-to-show" />
-    <img src="img/2.jpg" alt="image of game" class="image-to-show" />
-    <img src="img/3.jpg" alt="image of game" class="image-to-show" />
-    <img src="img/4.png" alt="image of game" class="image-to-show" />
-</div>
-</body>
-<script>
-
-    let stopBtn = document.createElement("button");
-    stopBtn.innerHTML = "Stop";
-    let imgBlock = document.querySelector(".images-wrapper");
-    imgBlock.after(stopBtn);
-    let playBtn = document.createElement("button");
-    playBtn.innerHTML = "Play";
-    imgBlock.after(playBtn);
-    let index = 0;
-    let img = document.querySelector(".image-to-show");
-    let imgs = 0;
-    let timer = function slider () {
-
-    if (index === 0) {
-        img[imgs].style.display = 'none';
-        imgs = (imgs + 1) % img.length;
-        img[imgs].style.display = 'block';
-        setTimeout(slider, 3000);
-}
-
-    }
-setTimeout(timer, 3000);
-    stopBtn.addEventListener('click', () => {
-        clearTimeout(timer);
-    });
-    playBtn.addEventListener('click', () => {
-        setTimeout(timer, 3000);
-    });
-    console.log(timer);
-
-</script>
+  </head>
+  <body>
+    <div class="images-wrapper">
+      <img src="img/1.jpg" alt="image of game" class="image-to-show" />
+      <img src="img/2.jpg" alt="image of game" class="image-to-show hide" />
+      <img src="img/3.jpeg" alt="image of game" class="image-to-show hide" />
+      <img src="img/4.png" alt="image of game" class="image-to-show hide" />
+    </div>
+    <script src="slider.js"></script>
+  </body>
 </html>
