@@ -1,0 +1,46 @@
+header {
+    background-color: #4bcaff;
+    padding: 20px 10px;
+}
+
+footer {
+    background-color: #3CB878;
+    padding: 20px 10px;
+}
+
+main {
+    background-color: #89CA62;
+    padding: 20px 10px;
+    height: 500px;
+}
+
+ul {
+    list-style-type: square;
+    margin-left: 20px;
+}
+
+input {
+    outline: none;
+    padding: 10px 15px;
+    border-radius: 30px;
+}
+
+label {
+    display: block;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    width: 50%;
+}
+
+.price-value {
+    padding: 5px 10px;
+    background: white;
+    border: 1px solid #e1e1e1;
+    border-radius: 50px;
+}
+
+.close-btn {
+    border-radius: 50%;
+    border: 1px solid #e1e1e1;
+    cursor: pointer;
+}
