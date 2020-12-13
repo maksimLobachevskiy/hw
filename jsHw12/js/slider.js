@@ -1,10 +1,10 @@
 let images = document.querySelectorAll(".images-wrapper img");
 let currentSlide = 0;
-let breakPoint = 0; 
-let timer = function slider() {
-    
-    if (breakPoint === 0) {
-    
+let timer;
+let playing = 0;
+
+
+function slider() {
     for (let i = 0; i < images.length; i++) {
         images[i].classList.add('hide');
     }
@@ -12,15 +12,13 @@ let timer = function slider() {
     
     if (currentSlide + 1 === images.length) {
         currentSlide = 0;
+        
     } else {
         currentSlide++;
     }
-
-    setTimeout(slider, 3000);
+    timer = setTimeout(slider, 3000);
 }
-}
-
-setTimeout(timer, 3000);
+slider();
 
 let stopBtn = document.createElement('button');
 let playBtn = document.createElement('button');
@@ -30,11 +28,12 @@ document.querySelector(".images-wrapper").after(stopBtn);
 document.querySelector(".images-wrapper").after(playBtn);
 
 stopBtn.addEventListener('click', () => {
-    breakPoint = 1;
     clearTimeout(timer);
-});
-
-playBtn.addEventListener('click', () => {
-    breakPoint = 0;
-    setTimeout(timer, 3000);
-});
+    playing = 0;
+ });
+ playBtn.addEventListener('click', () => {
+    if (!playing) {
+        playing = 1;
+        slider();
+    }
+ });
